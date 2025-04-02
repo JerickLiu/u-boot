@@ -455,6 +455,13 @@ source "lib/rsa/Kconfig"
 source "lib/crypto/Kconfig"
 source "lib/crypt/Kconfig"
 
+config LMS
+    bool "LMS PQC Signature support"
+    select SHA256
+    help
+      Enable LMS signature verification for raw firmware images.
+      This will verify ifs‑rpi4.bin using an LMS signature (embedded).
+
 config TPM
 	bool "Trusted Platform Module (TPM) Support"
 	depends on DM

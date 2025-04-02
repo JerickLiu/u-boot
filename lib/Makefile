@@ -72,6 +72,7 @@ obj-y += crypto/
 obj-$(CONFIG_$(PHASE_)ACPI) += acpi/
 obj-$(CONFIG_ECDSA) += ecdsa/
 obj-$(CONFIG_$(XPL_)RSA) += rsa/
+obj-$(CONFIG_LMS) += lms/
 obj-$(CONFIG_HASH) += hash-checksum.o
 obj-$(CONFIG_BLAKE2) += blake2/blake2b.o
 
